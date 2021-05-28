@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Player Management System</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Player Management System</h1>
+		<hr>
+		<h2>Update Player</h2>
+
+		<form action="#" th:action="@{/savePlayer}" th:object="${player}"
+			method="POST">
+
+				<!-- Add hidden form field to handle update -->
+				<input type="hidden" th:field="*{id}" />
+
+				<input type="text" placeholder="Player Name" th:field="*{name}" class="form-control mb-4 col-4" required>
+
+				<input type="text" placeholder="Team" th:field="*{team}" class="form-control mb-4 col-4" required>
+
+				<input type="number" placeholder="Number of Points" step="1" min="0" th:field="*{points}" class="form-control mb-4 col-4" required>
+
+				<select th:field="*{country}" class="form-control mb-4 col-4" required>
+						<option value="Canada">Canada</option>
+						<option value="Finland">Finland</option>
+						<option value="Germany">Germany</option>
+						<option value="USA">USA</option>
+				</select>
+
+
+				<button type="submit" class="btn btn-info col-2">Update Player</button>
+		</form>
+
+		<hr>
+
+		<a th:href = "@{/}">Back to List of Players</a>
+	</div>
+</body>
+</html>

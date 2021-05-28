@@ -1,0 +1,20 @@
+com/concordia/report/service/impl/PlayerServiceImpl.java
+ com.concordia.report.service.impl.PlayerServiceImpl
+com/concordia/report/exception/ServiceException.java
+ com.concordia.report.exception.ServiceException
+com/concordia/report/config/WebConfig.java
+ com.concordia.report.config.WebConfig
+com/concordia/report/model/Player.java
+ com.concordia.report.model.Player
+com/concordia/report/GradleReportApplication.java
+ com.concordia.report.GradleReportApplication
+com/concordia/report/ServletInitializer.java
+ com.concordia.report.ServletInitializer
+com/concordia/report/service/PlayerService.java
+ com.concordia.report.service.PlayerService
+com/concordia/report/dto/PlayerDTO.java
+ com.concordia.report.dto.PlayerDTO
+com/concordia/report/controller/PlayerController.java
+ com.concordia.report.controller.PlayerController
+com/concordia/report/repository/PlayerRepository.java
+ com.concordia.report.repository.PlayerRepository

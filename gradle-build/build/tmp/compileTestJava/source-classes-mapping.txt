@@ -1,0 +1,4 @@
+com/concordia/report/repository/PlayerRepositoryTest.java
+ com.concordia.report.repository.PlayerRepositoryTest
+com/concordia/report/GradleReportApplicationTests.java
+ com.concordia.report.GradleReportApplicationTests
